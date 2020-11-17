@@ -125,7 +125,7 @@ body
 {
     height: 90vh;
     background-color: black;
-    background-image: url('../img/hero-bg.jpg');
+    background-image: url('docs/img/hero-bg.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
