@@ -110,9 +110,28 @@ body
     {
         width: 100%;
     }
+
+
+}
+
+@media (min-width: 768px) and (max-width: 992px)
+{
     .article-content,.article-item-header
     {
-        width: 100%;
+        min-width: 70%;
+    }
+
+    .article-content p
+    {
+        font-size: 21px;
+    }
+}
+
+@media (max-width: 576px)
+{
+    body
+    {
+        min-width: 580px;
     }
 }
 /* End of Global Navigation styling*/
@@ -296,7 +315,8 @@ body
 }
 .article-content
 {
-    width: 55ch;
+
+    width: 500px;
     color: #fffffe;
     font-size: 16px;
     margin-top: 50px;
