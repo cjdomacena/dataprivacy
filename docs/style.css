@@ -1,3 +1,69 @@
+/*Viewport Changes*/
+/* Large devices (desktops, less than 1200px)*/
+@media (max-width: 1300px)
+{
+    .nav-container
+    {
+        width: 100%;
+    }
+
+    .hero-container
+    {
+        height: 500px;
+    }
+    .hero-content
+    {
+        width: 80%;
+    }
+    .hero-container .hero-content h1
+    {
+        font-size: 62px;
+        font-weight: 900;
+    }
+    .home-article-container
+    {
+        width: 100%;
+    }
+
+
+}
+
+@media (min-width: 768px) and (max-width: 992px)
+{
+    .article-content,.article-item-header
+    {
+        min-width: 100%;
+    }
+
+    .article-content p
+    {
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 576px)
+{
+    body
+    {
+        width: 576px;
+    }
+    .hero-container .hero-content
+    {
+        height: auto;
+        width: 90%;
+        margin: 0 auto;
+    }
+    .hero-container
+    {
+        height: 50vh;
+    }
+}
+/*Viewport Changes*/
+
+
+
+
+
 *
 {
     margin: 0;
@@ -81,66 +147,6 @@ body
 {
     margin: 10px 0;
 }
-
-/* Large devices (desktops, less than 1200px)*/
-@media (max-width: 1300px)
-{
-    .nav-container
-    {
-        width: 100%;
-    }
-
-    .hero-container
-    {
-        height: 500px;
-    }
-    .hero-content
-    {
-        width: 80%;
-    }
-    .hero-container .hero-content h1
-    {
-        font-size: 62px;
-        font-weight: 900;
-    }
-    .home-article-container
-    {
-        width: 100%;
-    }
-
-
-}
-
-@media (min-width: 768px) and (max-width: 992px)
-{
-    .article-content,.article-item-header
-    {
-        min-width: 100%;
-    }
-
-    .article-content p
-    {
-        font-size: 24px;
-    }
-}
-
-@media (max-width: 576px)
-{
-    body
-    {
-        width: 576px;
-    }
-    .hero-container .hero-content
-    {
-        height: auto;
-        width: 90%;
-        margin: 0 auto;
-    }
-    .hero-container
-    {
-        height: 50vh;
-    }
-}
 /* End of Global Navigation styling*/
 
 
@@ -190,11 +196,16 @@ body
 /* End of Hero styling*/
 
 
+
+/*--------------------------------*/
 .margin-top
 {
     margin-top: 100px;
 }
+/*--------------------------------*/
 
+
+/*----------Index.html Styling----------------*/
 .home-article-container
 {
     margin-bottom: 150px;
@@ -208,18 +219,31 @@ body
     width: 90%;
     max-width: 90%;
 }
+/*---------End of Index.html Styling-----------------*/
 
+
+
+/*--------Global Article boxes styling---------------*/
 .neo
 {
     padding: 25px;
-    /*box-shadow:*/
-    /*        5px 5px 3px 0 #0D0D0D,*/
-    /*        -3px -3px 6px 0 #0D0D0D;*/
     border-radius: 20px;
     border: solid 3px #141414;
     margin-right: 20px;
-    /*box-shadow: #1F1F1F 0 4px 4px;*/
+
 }
+
+.neo:hover
+{
+    transform: translate(30px,-30px);
+    transition: all .4s;
+    background-color: #141414;
+    /*padding-top:20px;*/
+    z-index: 1;
+    /*border-radius: 5px;*/
+    padding: 40px;
+}
+
 
 .insert-border
 {
@@ -270,21 +294,8 @@ body
     font-size: 26px;
     text-transform: uppercase;
 }
-.topic .article-header
-{
-    text-decoration: underline;
-}
 
-.neo:hover
-{
-    transform: translate(30px,-30px);
-    transition: all .4s;
-    background-color: #141414;
-    /*padding-top:20px;*/
-    z-index: 1;
-    /*border-radius: 5px;*/
-    padding: 40px;
-}
+/*--------End of Global Article boxes styling---------------*/
 
 .article-title a
 {
@@ -292,18 +303,7 @@ body
     font-size: 18px;
 }
 
-.read-more a
-{
-    color: #fffffe;
-    text-decoration: underline;
-    font-weight: 900;
-    text-transform: uppercase;
-}
-
-.read-more a:hover
-{
-    color: #303841;
-}
+/*------Topic Styling-------------*/
 .topics-container
 {
     width: 100%;
@@ -322,6 +322,11 @@ body
 
 }
 
+.topic .article-header
+{
+    text-decoration: underline;
+}
+
 .topics-header h1
 {
     font-weight: 900;
@@ -331,8 +336,12 @@ body
     padding-bottom: 10px;
     border-bottom: solid 2px #fffffe;
 }
+/*-----End of Topic Styling--------------------*/
 
 
+
+
+/*---------Article template Styling---------------*/
 .article-wrapper
 {
     display: grid;
@@ -404,4 +413,4 @@ body
 {
     font-size: 12px;
 }
-
+/*---------End of Article template Styling---------------*/
