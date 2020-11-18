@@ -32,7 +32,7 @@
 {
     .article-content,.article-item-header
     {
-        min-width: 100%;
+        min-width: 80%;
     }
 
     .article-content p
