@@ -39,8 +39,8 @@ body
 
 .btn-primary:hover
 {
-    background-color: #FF5A5F;
-    border-color: #FF5A5F;
+    background-color: #303841;
+    border-color: #303841;
     color: white;
 }
 .navbar a
@@ -123,7 +123,7 @@ body
 
     .article-content p
     {
-        font-size: 21px;
+        font-size: 24px;
     }
 }
 
@@ -132,6 +132,12 @@ body
     body
     {
         min-width: 580px;
+    }
+    .hero-container .hero-content
+    {
+        height: auto;
+        width: 90%;
+        margin: 0 auto;
     }
 }
 /* End of Global Navigation styling*/
@@ -174,9 +180,9 @@ body
 }
 #callToAction:hover
 {
-    background-color: #FF5A5F;
-    border-color: #FF5A5F;
-    color: #0D0D0D;
+    background-color: #303841;
+    border-color: #303841;
+    color: #fffffe;
 }
 /* End of Hero styling*/
 
@@ -255,7 +261,7 @@ body
 {
     transform: translate(30px,-30px);
     transition: all .4s;
-    background-color: #FF5A5F;
+    background-color: #303841;
     padding-top:20px;
     z-index: 1;
     border-radius: 5px;
@@ -277,7 +283,7 @@ body
 
 .read-more a:hover
 {
-    color: #141414;
+    color: #303841;
 }
 .topics-container
 {
@@ -364,10 +370,11 @@ body
     font-weight: 900;
 }
 
-.article-wrapper a:hover, .article-item-header u:hover
+.article-wrapper u:hover
 {
-    color: dimgray;
+    color: #303841;
 }
+
 
 .article-item-header p, em
 {
